@@ -12,7 +12,7 @@ class HTree {
 	private int x, y, length, depth;
 	private Graphics g;
 
-	public static final int MAX_DEPTH = 10;
+	public static final int MAX_DEPTH = 20;
 
 	/**
 	 * Constructor
@@ -130,6 +130,8 @@ class HTree {
 		g.drawLine(x1, y1, x2, y2);
 
 		//reduction step
+		recursiveDraw(n-1, x1, y1, halfLength);
+		recursiveDraw(n-1, x2, y2, halfLength);
 		
 		//vertical right
 		x1 = a + halfLength;
@@ -137,6 +139,8 @@ class HTree {
 		g.drawLine(x1, y1, x2, y2);
 
 		//reduction step
+		recursiveDraw(n-1, x1, y1, halfLength);
+		recursiveDraw(n-1, x2, y2, halfLength);
 		
 	}
 
