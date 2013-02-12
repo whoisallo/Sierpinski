@@ -12,7 +12,7 @@ class HTree {
 	private int x, y, length, depth;
 	private Graphics g;
 
-	public static final int MAX_DEPTH = 20;
+	public static final int MAX_DEPTH = 7;
 
 	/**
 	 * Constructor
